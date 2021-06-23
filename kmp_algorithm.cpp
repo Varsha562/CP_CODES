@@ -3,19 +3,19 @@ public:
      void lpstable(string s, vector<int>&lps)
     {
         int i=1;
+        int len=0;
         while(i<s.size())
         {
-            int z=1;
-                if(s[i]==s[z-1])
+                if(s[i]==s[len])
                 {
-                    lps[i]=z;
+                    lps[i]=len+1;
                     z++;
                     i++;
                 }
              else
-             if(z!=1)
+             if(len!=0)
              {
-                  z=lps[z-1];
+                  len=lps[len-1];
              }
              else       
                 i++;
