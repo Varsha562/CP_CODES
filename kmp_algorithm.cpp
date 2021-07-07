@@ -9,7 +9,6 @@ public:
                 if(s[i]==s[len])
                 {
                     lps[i]=len+1;
-                    z++;
                     i++;
                 }
              else
